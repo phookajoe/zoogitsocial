@@ -1,0 +1,88 @@
+@import "../less/00-mixins.less";
+
+#community-wrap
+{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	word-wrap: break-word;
+	
+	@import "../less/01-reset.less";
+	@import "../less/01-layout.less";
+	@import "../less/02-toolbar.less";
+	@import "../less/03-submenu.less";
+	@import "../less/04-filter.less";
+	@import "../less/05-indexs.less";
+	@import "../less/06-form.less";
+	@import "../less/07-input.less";
+	@import "../less/07-input.button.less";
+	@import "../less/07-input.privacy.less";
+	@import "../less/08-icons.less";
+	@import "../less/09-videos.less";
+	@import "../less/11-tinymce.less";
+	@import "../less/12-modules.less";
+	@import "../less/13-bootstrap-grid.less";
+	@import "../less/14-streams.less";	
+	@import "../less/15-page.less";
+	@import "../less/16-media.less";
+	@import "../less/17-toolbox.less";
+	@import "../less/18-wall.less";
+	@import "../less/19-discussion.less";
+	@import "../less/20-file.less";
+	@import "../less/21-applications.less";
+	@import "../less/22-guest.less";
+	@import "../less/24-omnibox.less";
+	@import "../less/25-map.less";
+	@import "../less/26-like.less";
+	@import "../less/27-search.less";
+	@import "../less/28-featured.less";
+	@import "../less/29-rsvp.less";
+	@import "../less/30-messaging.less";
+	@import "../less/31-search.less";
+}
+
+body #cWindow
+{
+	background: #fff;
+	font-size: 12px;
+	font-family: Arial,sans-serif;
+	line-height: 1.35;
+	color: #555;
+	text-align: left;
+
+	position: absolute;
+	z-index: 999999999999;
+	display: block;
+	width: 452px;
+	height: 170px;
+	top: 0;
+	margin-left: -25px;
+
+	&.new { display: none; }
+
+	@import "../less/01-reset.less";
+	@import "../less/06-form.less";
+	@import "../less/07-input.less";
+	@import "../less/07-input.button.less";
+	@import "../less/07-input.privacy.less";
+	@import "../less/13-bootstrap-grid.less";
+	@import "../less/23-window.less";
+	@import "../less/23-window.application.less";
+	@import "../less/23-window.bookmark.less";
+	@import "../less/23-window.stream.less";
+
+}
+
+@import "../less/99-misc.less";
+
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+	@import "../less/00-responsive.less";
+	@import "../less/00-responsive-tight.less";
+}
+@media (min-width: 480px) and (max-width: 979px)
+{
+	@import "../less/00-responsive.less";
+}

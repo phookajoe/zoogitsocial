@@ -1,0 +1,288 @@
+
+@import "../../templates/default/less/00-mixins.less";
+@import "../../templates/default/less/08-icons.less";
+@import "../../templates/default/less/09-videos.less";
+@import "../../templates/default/less/14-streams.less";
+@import "../../templates/default/less/13-bootstrap-grid.less";
+
+@imagePathDefault			:	  "../../templates/default/images";
+@spritesIconsPath			:     "../../templates/default/images/sprites-icons.png";
+@spritesToolbarPath			:     "../../templates/default/images/sprites-toolbar-dark.png";
+
+
+
+
+/**- RESET LIST -**/
+
+.list-reset,
+.list-reset li 
+{
+	list-style: none;
+	list-style-image: none;
+	line-height: inherit;
+	.reset-shape();
+	.reset-space();
+}
+
+
+
+
+/**- FLOAT ELEMENTS -**/
+
+.l-float,
+.cFloat-L
+{
+	float: left;
+}
+.r-float
+{
+	float: right;
+}
+
+
+
+/**- FLOAT CLEAR -**/
+
+.clear
+{
+	clear:both;
+	font-size: 0 !important;
+	height: 0 !important;
+	line-height: 0 !important
+}
+.clearfix
+{
+	clear:none;
+	display:block;
+	height:auto;
+	overflow:visible;
+	zoom:1;
+
+	&:after
+	{
+		content:".";
+		clear:both;
+		display:block;
+		height:0;
+		visibility:hidden
+	}
+}
+.clearfull
+{
+	display: inline-block;
+	width: 100%
+}
+.cMods .small
+{
+	margin: auto;
+}
+
+[class^="com-icon-"],
+[class*=" com-icon-"],
+[class^="tool-icon-"],
+[class*=" tool-icon-"]
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: top;
+	background-image: url("@{spritesIconsPath}");
+	background-repeat: no-repeat;
+}
+
+
+
+
+[class^="tool-icon-"],
+[class*=" tool-icon-"]
+{
+	background-image: url("@{spritesToolbarPath}");
+}
+.tool-icon-notification
+{
+	background-position: 0 -20px; 
+}
+.tool-icon-friend
+{
+	background-position: 0 -40px;
+}
+.tool-icon-inbox
+{
+	background-position: 0 -60px;
+}
+
+
+
+
+
+/**- MODULE: mod_hellome -**/
+
+.cHello-Header { 
+	border-bottom: 1px solid #e5e5e5; 
+	text-align: center; 
+	padding-bottom: 15px;
+}
+.cHello-Avatar { 
+	display: inline-block; 
+	padding: 2px; 
+	border: 1px solid #ddd; 
+}
+.cMod-Notify {
+	font-size: 0;
+	margin: 10px 0 0;
+
+	a {
+		display: inline-block;
+		line-height: 20px;
+		border: 1px solid #ccc;
+		border-bottom-color: #bbb;
+		padding: 5px;
+		position: relative;
+		z-index: 1;
+		.gradient-vertical( #ffffff, #eee );
+
+		&:first-child
+		{
+			.border-radius( 3px 0 0 3px );
+		}
+		&:last-child
+		{
+			.border-radius( 0 3px 3px 0 );
+		}
+
+		+ a
+		{
+			border-left: 0;
+		}
+
+		b{
+			background: #555;
+			.border-radius( 3px );
+			color: #fff;
+			display: inline-block;
+			font-size: 10px;
+			line-height: 14px;
+			padding: 0 4px;
+			margin: 3px 0 0 5px;
+		}
+	}
+}
+.cHello-Karma,
+.cHello-Status { 
+	margin: 5px 0 0; 
+}
+.cHello-Status {
+	input[type="text"] {
+		border: 1px dashed #dadada;
+		padding: 4px;
+		margin: 0 auto;
+		width: 85%;
+	}
+}
+.cHello-Menu {
+	margin-top: 7px;
+
+	a { line-height: 20px; }
+
+	div + div
+	{
+		border-top: 1px solid #ddd;
+		margin-top: 7px;
+		padding-top: 7px;
+	}
+}
+
+
+
+/**- MODULE: mod_latestevent -**/
+
+.cMod-Row + .cMod-Row
+{
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.cThumb-Avatar {}
+.cThumb-Calendar
+{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 45px;
+
+	b { background:#f5f5f5; display: block; font: 9px/19px Tahoma,Arial,sans-serif; text-align: center; text-transform: uppercase;  }
+	b + b { background: #fff; border-top: 1px solid #ccc; border-bottom: 2px solid #eee; font: bold 17px/32px Arial,sans-serif; }
+}
+.cThumb-Detail
+{
+	margin: 0 0 0 55px;
+}
+.cThumb-Title
+{
+	font-weight: bold;
+}
+.cThumb-Brief
+{
+	margin: 3px 0 0;
+	word-wrap: break-word;
+}
+.cMod-Thumbs
+{
+	font-size: 0;
+
+	a
+	{
+		display: inline-block;
+		margin: 0 5px 5px 0;
+	}
+}
+
+
+
+/**- MODULE: mod_activitystream -**/
+
+.cStream-Actions span + span 
+{
+	background-image: url("@{imagePathDefault}/middot.png");
+}
+
+.cStream-Photo.top-photos {
+	.span3 {margin-bottom:8px;}
+	.span3:nth-child(4n+1) {
+		margin-left:0px;
+	}
+}
+
+
+/**- MODULE: mod_statistic -**/
+.cMods-Statistic
+{
+	div 
+	{
+		display: inline-block;
+		margin-top: 5px;
+		text-align: right;
+		width: 100%;
+
+		+ div
+		{
+			border-top: 1px solid #e5e5e5;
+			padding-top: 5px;
+		}
+
+		> span
+		{
+			float: left;
+		}
+	}
+}
+
+
+/**- MODULE: tooltips -**/
+.tipsy { padding: 5px; font-size: 10px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(../tipsy-0.1.7/src/images/tipsy.gif); }
+.tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+.tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
+.tipsy-north { background-position: top center; }
+.tipsy-south { background-position: bottom center; }
+.tipsy-east { background-position: right center; }
+.tipsy-west { background-position: left center; }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="display" type="radio" default="age" label="Display As" description="">
+			<option value="age" name='Age'>Age</option>
+			<option value="date" name='Date'>Date</option>
+		</param>
+		<param name="readonly" type="radio" default="0" label="Read Only" description="">
+			<option value="0" name='No'>No</option>
+			<option value="1" name='Yes'>Yes</option>
+		</param>
+		<param name="maxrange" type="text" default="" label="Maximum Range in YYYY-MM-DD or numeric age" description="" />
+		<param name="minrange" type="text" default="" label="Minimum Range in YYYY-MM-DD or numeric age" description="" />
+		<param name="date_format" type="text" default="" label="Date Format.(PHP - E.g. Y-m-d -> Year-Month-Day)" description="" />
+		<param name="style" type="text" default="" label="Style Atrribute" description="" />
+	</params>
+</config>

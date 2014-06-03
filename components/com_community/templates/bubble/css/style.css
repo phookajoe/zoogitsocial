@@ -1,0 +1,124 @@
+
+/*= IMPORT STYLING FROM DEFAULT;
+-------------------------------------------------------------- */
+
+@import url("../../default/css/style.css");
+
+
+#community-wrap .cProfile-Avatar
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#community-wrap .cProfile-Avatar .cPageAvatar
+{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+#community-wrap .cProfile-Main
+{
+	margin: 0 190px 0 0;
+}
+#community-wrap .cProfile-Side
+{
+	float: right;
+	width: 176px;
+}
+#community-wrap .cProfile-Likes
+{
+	margin: 0 0 15px;
+}
+#community-wrap .cProfile-Header
+{
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+}
+#community-wrap .cProfile-Status p 
+{
+	border-left: 2px solid #eee;
+	margin: 10px 0 5px;
+	padding: 5px 5px 5px 15px;
+}
+#community-wrap .cProfile-Status span
+{
+	text-transform: capitalize;
+}
+#community-wrap .cProfile-Heading
+{
+	font-size: 18px;
+	margin: 0 0 20px
+}
+#community-wrap .cProfile-Heading > a
+{
+	font-size: 11px;
+}
+
+#community-wrap .cProfile-Fields
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 20px;
+}
+#community-wrap .cProfile-Fields .cField
+{
+	width: 31.333%;
+	float: left;
+}
+#community-wrap .cProfile-Fields .cField + .cField
+{
+	border-top: 0;
+	margin: 0 0 0 2%;
+	padding: 0;
+}
+
+
+#community-wrap .cProfile-Statistic
+{
+	font-size: 0;
+	text-align: center;
+	margin: 0 0 20px;
+}
+#community-wrap .cProfile-Statistic a,
+#community-wrap .cProfile-Statistic b 
+{
+	background: #eee;
+	color: #fff !important;
+	display: block;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	padding: 20px 0;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+
+}
+#community-wrap .cProfile-Statistic div
+{
+	display: inline-block;
+	width: 19.5%;
+}
+#community-wrap .cProfile-Statistic div + div
+{
+	margin-left: 0.5%;
+}
+#community-wrap .cProfile-Statistic span
+{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+#community-wrap .cProfile-Statistic span + span
+{
+	font-size: 11px;
+	font-weight: normal;
+	opacity: 0.7;
+}
+#community-wrap .cStats-Karma b 	{ background: #779438; }
+#community-wrap .cStats-Groups a 	{ background: #45b3f7 !important; }
+#community-wrap .cStats-Friends a 	{ background: #a1a1a1 !important; }
+#community-wrap .cStats-Photos a 	{ background: #ff7d59 !important; }
+#community-wrap .cStats-Activity b 	{ background: #f63f2d; }
+
+#community-wrap .cPageTools { margin-top: 15px; }

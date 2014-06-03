@@ -1,0 +1,70 @@
+@import "../less/00-mixins.less";
+
+#community-wrap
+{
+	.cToolBar
+	{
+		background: url(../images/bar-bg-dark.png) bottom repeat-x #aaa;
+		border-color: rgba(0, 0, 0, 0.25);
+
+		.cMenu-Text > a
+		{
+		}
+
+		.cMenu-Text:hover > a,
+		.cMenu-Text 	  > a.active
+		{
+			.gradient-vertical( #777, #555 );
+			border-color: #444;
+		}
+		.cHas-Childs ul,
+		.cHas-Childs ul li,
+		.cHas-Childs ul li a
+		{
+			background: #555;
+			border-color: #444;
+			color: #ddd;
+		}
+		.cMenu-Icon a
+		{
+			&.active,
+			&:focus,
+			&:hover
+			{
+				background-color: #ddd;
+			}
+		}
+	}
+	[class^="com-toolbar-"],
+	[class*=" com-toolbar-"]
+	{
+		background-image: url(../images/sprites-toolbar-dark.png)
+	}
+
+	.app-box-header
+	{
+		color: #333;
+	}
+
+	.app-box-main
+	{
+		.app-widget-header
+		{
+			background: #AAAAAA;
+			border: 1px solid #888;
+			border-bottom-color: #777;
+
+			.app-box-title
+			{
+				color: #333;
+			}
+		}
+	}
+
+	[class^="com-app-"],
+	[class*=" com-app-"]
+	{
+		background-image: url(../images/sprites-app-dark.png);
+		width: 16px;
+	}
+}

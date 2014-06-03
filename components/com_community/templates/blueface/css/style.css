@@ -1,0 +1,159 @@
+
+
+/*= IMPORT STYLING FROM DEFAULT;
+-------------------------------------------------------------- */
+
+@import url("../../default/css/style.css");
+@import url("../../default/css/style.blue.css");
+
+
+
+#community-wrap .cProfile-Header
+{
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#community-wrap .cPageTools 
+{
+	margin-top: 15px
+}
+#community-wrap .cProfile-Avatar
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#community-wrap .cProfile-Avatar .cPageAvatar
+{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+
+
+#community-wrap .cProfile-Fields
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 20px;
+}
+#community-wrap .cProfile-Fields > h2
+{
+	margin-bottom: 20px
+}
+#community-wrap .cProfile-Fields .cField
+{
+	width: 31.333%;
+	float: left;
+}
+#community-wrap .cProfile-Fields .cField + .cField
+{
+	border-top: 0;
+	margin: 0 0 0 2%;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#community-wrap .cModule h3 {
+	background: #eceff5;
+	border: 0px none;
+	border-top: 1px solid #94a3c4;
+	padding: 0px 8px;
+	line-height: 25px;
+	height: 25px;
+	color: #095197;
+}
+#community-wrap .app-box
+{
+	border: 0;
+	padding: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#community-wrap .app-box-header .app-box-header {
+	background: transparent;
+	margin: 0 !important;
+	padding: 0;
+	border: 0px none !important;
+}
+
+#community-wrap .app-box-title {
+	color: #095197;
+	line-height: 25px;
+	padding: 0 !important;
+	font-size: 11px;
+}
+
+#community-wrap .app-box-menu-icon, #community-wrap .app-box-menu-icon:focus, #community-wrap .app-box-menu-icon:hover {
+	background-image: url("../images/app-box-menu-icon.png");
+}
+
+#community-wrap .cThumbList li {
+	padding: 3px 2px 3px 4px;
+}
+
+
+
+#community-wrap .cBlueface .cProfile-About {
+	width: 34%;
+	float: left;
+}
+
+#community-wrap .cBlueface .cProfile-About + .cProfile-About {
+	width: 33%;
+}
+#community-wrap .cBlueface .cProfile-About h4 {
+	border-bottom: 1px solid #666;
+	margin: 10px;
+}
+
+#community-wrap .cBlueface .cProfile-About dl {
+	margin: 10px;
+}
+
+#community-wrap .cBlueface-table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#community-wrap .cBlueface-table td {
+	border: 1px solid #ccc !important;
+	padding: 10px;
+	background-color: #f6f6f6;
+}
+#community-wrap .cBlueface-table td .number {
+	font-size: 200%;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#community-wrap .cBlueface-table td a {
+	display: block;
+	color: #095197;
+}
+
+#community-wrap .cBlueface-table td a:hover {
+	background-color: transparent !important;
+	color: #095197;
+}
+
+#community-wrap .cBlueface-table td:hover,
+#community-wrap .cBlueface-table td:hover a,
+#community-wrap .cBlueface-table td:hover a:hover {
+	background-color: #095197 !important;
+	color: #fff !important;
+}

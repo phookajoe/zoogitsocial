@@ -1,0 +1,303 @@
+#toolbar-box
+{
+	background: none;
+	margin: 0;
+	padding: 20px 10px;
+
+	div.m
+	{
+		background: none;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		.border-radius( 0 );
+	}
+	div.pagetitle 
+	{
+		background-position: 0 center;
+		padding-left: 45px;
+
+		h2
+		{
+			font-size: 24px !important;
+			font-family: Arial,sans-serif !important;
+			font-weight: normal;
+			line-height: 52px !important;
+			padding: 0;
+		}
+	}
+}
+
+
+
+#submenu-box 
+{
+	margin: 0;
+	padding: 5px 10px 15px;
+
+	div.m 
+	{
+		background: #fff;
+		border:1px solid #cacaca;
+		.border-radius( 2px );
+		// .gradient-vertical( #ffffff, #eeeeee);
+		.box-shadow( 0 1px 3px rgba( 0, 0, 0, 0.08) inset );
+		padding: 0;
+		overflow: hidden;
+
+		#submenu
+		{
+			display: inline-block;
+			width:100%;
+			overflow: hidden;
+
+			li
+			{
+				float: left;
+				display: inline-block;
+
+				a
+				{
+					color: #666;
+					display: block;
+					height: auto;
+					padding:10px 15px;
+					text-decoration: none !important;
+
+					&:hover
+					{
+						background: #f7f7f7;
+						.box-shadow( 0 1px 0 #fff inset );
+					}
+
+					&.active
+					{
+						background: #f0f0f0;
+						.box-shadow( 0 0 2px #ddd inset );
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+#element-box
+{
+	padding:0;
+	margin:0 0 30px;
+
+	> div.m 
+	{
+		background: #f8f8f8;
+		border: 0;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		.border-radius(0);
+		padding: 10px;
+	}
+}
+#sliders
+{
+	margin: 0;
+
+	.panel
+	{
+		border: 1px solid #ccc;
+		.border-radius( 3px );
+		overflow: hidden;
+		margin-bottom: 5px;
+	}
+
+	.title
+	{
+		border-bottom: 1px solid #ccc;
+		cursor: pointer;
+		.gradient-vertical( #ffffff, #f5f5f5);
+		padding: 8px 10px;
+		margin: 0;
+
+		&.pane-toggler
+		{
+			border-bottom: 0;
+		}
+	}
+}
+.pane-box
+{
+	padding: 15px;
+}
+
+
+@panel-spacing		: 10px;
+
+#cpanel
+{
+	margin-top: -@panel-spacing;
+
+	div.icon
+	{
+		display: block;
+		margin-top: @panel-spacing;
+		margin-right: @panel-spacing;
+		margin-bottom: 0;
+
+		a
+		{
+			background: #fff;
+			border: 1px solid #ccc;
+			.border-radius( 3px );
+			color: #555;
+			float: left;
+			text-align: center;
+			text-decoration: none;
+			width: 110px;
+			height: 100px;
+			vertical-align: middle;
+
+			&:focus,
+			&:hover
+			{
+				.box-shadow( 0 0 3px rgba(0,102,204,0.3) );
+				border: 1px solid #aaa;
+			}
+		}
+	}
+	img
+	{
+		padding: 20px 0;
+		margin: 0 auto;
+		display: block;
+	}
+	span
+	{
+		display: block;
+	}
+}
+
+
+
+.alert
+{
+	background-color: #FCF8E3;
+	border: 1px solid #ddc8a5;
+	.border-radius( 3px );
+	color: #C09853;
+	margin: 0 0 10px;
+	padding: 10px;
+
+	&.alert-info
+	{
+		background-color: #e3e6ee;
+		border-color: #B9C3DC;
+		color: #374e70;
+	}
+
+	&.alert-error
+	{
+		background-color: #F2DEDE;
+		border-color: #cda6ab;
+		color: #B94A48;
+	}
+
+	&.alert-success
+	{
+		background-color: #DFF0D8;
+		border-color: #b6cca3;
+		color: #468847;
+	}
+}
+#system-message
+{
+	margin: 0 0 10px;
+
+	> dd > ul
+	{
+		background-position: 15px center !important;
+		background-repeat: no-repeat;
+	}
+	dd.message ul {
+		background-image: url(images/notice-success.png);
+		background-color: #DFF0D8;
+		border-color: #b6cca3;
+		color: #468847;	
+	}
+
+	dd.error ul {
+		background-image: url(images/notice-warning.png);
+		background-color: #F2DEDE;
+		border-color: #cda6ab;
+		color: #B94A48;
+	}
+
+	dd.warning ul {
+		background-image: url(images/notice-notice.png);
+		background-color: #FCF8E3;
+		border-color: #ddc8a5;
+		color: #C09853;
+	}
+	dd.notice ul {
+		background-image: url(images/notice-info.png);
+		background-color: #e3e6ee;
+		border-color: #B9C3DC;
+		color: #374e70;	
+	}
+}
+
+
+
+
+.template-editor
+{
+	font-family: "andale mono",consolas,monaco,"lucida console","courier new",courier,monospace !important;
+	width: 100%;
+	height: 400px;
+	resize: vertical;
+}
+
+
+
+dl.tabs
+{
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+	float: none;
+	margin: 10px 0;
+	padding: 0;
+	width: 100%;
+
+	* { padding: 0; margin: 0; }
+
+	dt
+	{
+		float: left;
+		background: #eee;
+		border: 1px solid #ccc;
+		.border-radius( 2px 2px 0 0 );
+		margin: 0 5px -1px 0;
+		padding: 8px 13px;
+
+		&.open
+		{
+			background: #fff;
+			border-bottom: 1px solid #fff;
+		}	
+	}
+}
+.current
+{
+	.tabs
+	{
+		margin: 0
+	}
+}
+
+.c-star
+{
+	display: inline-block;
+	background: url(images/star.png) center no-repeat;
+	height: 16px;
+	width: 16px;
+}

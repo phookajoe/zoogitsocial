@@ -1,0 +1,64 @@
+@column-fat		: 5px;
+
+*
+{
+	font-size:11px !important;
+	font-family:Tahoma,'Lucida Grande',Arial,sans-serif !important;
+	line-height: 20px;
+}
+
+
+
+div.toolbar-list
+{
+	li.divider
+	{
+		width: 1px;
+		padding: 0;
+		margin: 0 5px;
+	}
+	a
+	{
+		border-color: transparent;
+
+		&:hover
+		{
+			border-color: #e5e5e5 #e5e5e5 #ddd;
+			.border-radius( 2px );
+		}
+	}
+}
+
+
+
+/**- FLOAT CLEAR -**/
+
+.clear
+{
+	clear:both;
+	font-size: 0 !important;
+	height: 0 !important;
+	line-height: 0 !important
+}
+.clearfix
+{
+	clear:none;
+	display:block;
+	height:auto;
+	overflow:visible;
+	zoom:1;
+
+	&:after
+	{
+		content:".";
+		clear:both;
+		display:block;
+		height:0;
+		visibility:hidden
+	}
+}
+.clearfull
+{
+	display: inline-block;
+	width: 100%
+}

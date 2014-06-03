@@ -1,0 +1,45 @@
+*
+{
+	font-family: Tahoma,'Lucida Grande',Arial,sans-serif !important;
+    font-size: 11px !important;
+}
+td.key
+{
+	text-align: right;
+	padding: 0 5px 0 0;
+}
+
+
+
+
+/**- FLOAT CLEAR -**/
+
+.clear
+{
+	clear:both;
+	font-size: 0 !important;
+	height: 0 !important;
+	line-height: 0 !important
+}
+.clearfix
+{
+	clear:none;
+	display:block;
+	height:auto;
+	overflow:visible;
+	zoom:1;
+
+	&:after
+	{
+		content:".";
+		clear:both;
+		display:block;
+		height:0;
+		visibility:hidden
+	}
+}
+.clearfull
+{
+	display: inline-block;
+	width: 100%
+}
